@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: monospace;
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #000;
+    color: rgb(54, 204, 253);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+}
+
+.container {
+    border: 1px solid rgb(54, 204, 253);
+    padding: 20px;
+}
+
+.music {
+    min-width: 250px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+h3 {
+    padding: 10px;
+}
+
+h4 {
+    font-size: 10px;
+    text-decoration: underline;
+}
+
+hr {
+    color: rgb(54, 204, 253);
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+li {
+    padding: 10px
+}
