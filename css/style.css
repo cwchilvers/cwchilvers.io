@@ -52,3 +52,16 @@ ul {
 li {
     padding: 10px
 }
+
+@media (max-width: 720px) {
+    body {
+        gap: 60px;
+        padding: 60px;
+    }
+    h2 { font-size: 28px; }
+    h3 { font-size: 22px; }
+    h4 { font-size: 14px; }
+    .container { padding: 30px; }
+    .music { min-width: 320px; }
+    li { font-size: 20px; }
+}
