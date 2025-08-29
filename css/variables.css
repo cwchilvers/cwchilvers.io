@@ -1,9 +1,4 @@
 :root {
     --brand: rgb(54, 204, 253);
     --toast-bg: rgba(0,0,0,.85);
-    --scale: 1;
-}
-
-@media (max-width: 1048px) {
-  :root { --scale: 2.5; }
 }

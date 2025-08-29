@@ -1,11 +1,11 @@
 /* Contact */
 .contact {
 	display: flex;
-	gap: calc(20px * var(--scale));
+	gap: 20px;
 	align-items: center;
 }
 .contact img {
-	width: calc(20px * var(--scale));
+	width: 20px;
 }
 
 
@@ -13,12 +13,13 @@
 .toast {
 	position: fixed;
 	left: 50%;
-	bottom: calc(200px * var(--scale));
-	transform: translateX(-50%) translateY(calc(20px * var(--scale)));
-	padding: calc(10px * var(--scale)) calc(14px * var(--scale));
-	border-radius: calc(8px * var(--scale));
+	bottom: 200px;
+	transform: translateX(-50%) translateY(20px);
+	padding: 10px 14px;
+	background-color: black;
+	border-radius: 8px;
 	color: #fff;
-	font-size: calc(14px * var(--scale));
+	font-size: 14px;
 	opacity: 0;
 	pointer-events: none;
 	transition: opacity .2s ease, transform .2s ease;
@@ -28,4 +29,40 @@
 .toast.show {
 	opacity: 1;
 	transform: translateX(-50%) translateY(0);
+}
+
+/* Photo Viewer */
+.photo-viewer { 
+	min-height:100vh;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	gap:20px;
+	padding: 20px;
+	margin: 0
+}
+
+.photo-viewer img {
+	max-width:90vw;
+	max-height:80vh;
+	border: solid 1px #36ccfd
+}
+
+.photo-viewer .controls { 
+	display:flex;
+	gap:20px;
+}
+
+.photo-viewer button { 
+	padding:8px 16px;
+	color:#36ccfd;
+	font-weight:400; 
+	border: solid 1px #36ccfd
+}
+
+.photo-viewer button:disabled {
+	pointer-events:none;
+	color: black;
+	border-color: black
 }
