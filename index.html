@@ -3,17 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <title>cwchilvers.io</title>
+
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <script src="scripts/clipboard.js" defer></script>
+  <script src="scripts/toast.js" defer></script>
+  <script src="scripts/main.js" defer></script>
 </head>
 <body>
   <div class="container">
-    <h2>Links</h2>
+    <h2>cwchilvers.io</h2>
     <hr>
-      <ul>
-        <li><a href="music.html">➤ music</a></li>
-        <li><a href="https://github.com/cwchilvers">➤ github</a></li>
-      </ul>
+    <ul>
+      <li><a href="music.html">▸ music</a></li>
+      <li><a href="https://www.youtube.com/@meesteryumyum">▸ videos</a></li>
+      <li><a href="https://github.com/cwchilvers">▸ github</a></li>
+    </ul>
   </div>
+
+  <div class="contact">
+    <a href="mailto:mail@cwchilvers.io" title="email">
+      <img src="images/email.svg" alt="email">
+    </a>
+
+    <button id="discordCopy" type="button" title="discord" data-username="@meesteryumyum">
+      <img src="images/discord.svg" alt="discord">
+    </button>
+
+    <a href="https://www.instagram.com/cwchilvers/" title="instagram">
+      <img src="images/instagram.svg" alt="instagram">
+    </a>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
 </body>
 </html>
