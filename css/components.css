@@ -1,0 +1,31 @@
+/* Contact */
+.contact {
+	display: flex;
+	gap: calc(20px * var(--scale));
+	align-items: center;
+}
+.contact img {
+	width: calc(20px * var(--scale));
+}
+
+
+/* Toast */
+.toast {
+	position: fixed;
+	left: 50%;
+	bottom: calc(200px * var(--scale));
+	transform: translateX(-50%) translateY(calc(20px * var(--scale)));
+	padding: calc(10px * var(--scale)) calc(14px * var(--scale));
+	border-radius: calc(8px * var(--scale));
+	color: #fff;
+	font-size: calc(14px * var(--scale));
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity .2s ease, transform .2s ease;
+	z-index: 5000;
+}
+
+.toast.show {
+	opacity: 1;
+	transform: translateX(-50%) translateY(0);
+}

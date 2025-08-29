@@ -1,0 +1,6 @@
+.container {
+    border: calc(1px * var(--scale)) solid var(--brand);
+    padding: calc(20px * var(--scale));
+}
+
+.music { min-width: calc(250px * var(--scale)); }

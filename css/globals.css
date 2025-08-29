@@ -1,0 +1,39 @@
+body {
+	font-family: 'Causten', sans-serif;
+	font-weight: 300;
+	display: flex;
+	min-height: 100vh;
+	min-width: 100vw;
+	background-color: #000;
+	color: var(--brand);
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	gap: calc(40px * var(--scale));
+	padding: calc(40px * var(--scale));
+}
+
+h2 {
+	font-weight: 400;
+	font-size: calc(20px * var(--scale));
+	padding-bottom: calc(10px * var(--scale));
+}
+h3 {
+	font-size: calc(14px * var(--scale));
+	padding: calc(10px * var(--scale));
+}
+h4 {
+	font-size: calc(10px * var(--scale));
+	text-decoration: underline;
+}
+
+hr {
+	border: none;
+	height: calc(1px * var(--scale));
+	background-color: var(--brand);
+	margin: calc(10px * var(--scale)) 0;
+}
+
+ul { display: flex; flex-direction: column; align-items: start; }
+li { font-size: calc(16px * var(--scale)); padding: calc(10px * var(--scale)); }
