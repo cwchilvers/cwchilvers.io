@@ -66,3 +66,33 @@
 	color: black;
 	border-color: black
 }
+
+.viewer {
+  width: fit-content;        /* hugs the image width */
+  margin: 0 auto;            /* centers the whole thing */
+}
+
+.toolbar {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;  /* left | center | right */
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.counter {
+  justify-self: start;
+  font-size: 14px;
+  color: var(--white);
+  opacity: 0.8;
+}
+
+.controls {
+  display: inline-flex;
+  gap: 12px;
+  justify-self: center;      /* keeps buttons centered */
+}
+
+.spacer {                    /* balances the grid so center is truly centered */
+  justify-self: end;
+}
