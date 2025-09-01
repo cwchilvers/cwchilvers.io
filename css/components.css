@@ -68,16 +68,16 @@
 }
 
 .viewer {
-  width: fit-content;        /* hugs the image width */
-  margin: 0 auto;            /* centers the whole thing */
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .toolbar {
   display: grid;
-  grid-template-columns: 1fr auto 1fr;  /* left | center | right */
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
   gap: 12px;
-  margin-top: 12px;
+  margin-top: 
 }
 
 .counter {
@@ -90,9 +90,9 @@
 .controls {
   display: inline-flex;
   gap: 12px;
-  justify-self: center;      /* keeps buttons centered */
+  justify-self: center;
 }
 
-.spacer {                    /* balances the grid so center is truly centered */
+.spacer {
   justify-self: end;
 }
