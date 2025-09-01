@@ -2,18 +2,41 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+	<title>cwchilvers.io | woody</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>cwchilvers.io</title>
 
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/variables.css">
-	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/globals.css">
-	<link rel="stylesheet" href="css/layout.css">
-	<link rel="stylesheet" href="css/components.css">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/variables.css">
+	<link rel="stylesheet" href="../css/fonts.css">
+	<link rel="stylesheet" href="../css/globals.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" href="../css/components.css">
+
+	<script src="../scripts/photo_viewer.js" defer></script>
 </head>
-<body>
-	<div class="container">
+<body class="photo-viewer">
+	<div class="viewer">
+	<img id="photo" src="" alt="">
+
+	<div class="toolbar">
+		<div class="counter" id="counter"></div>
+
+		<div class="controls">
+			<button id="prev">prev</button>
+			<button id="next">next</button>
+		</div>
+
+		<div class="spacer" aria-hidden="true"></div>
 	</div>
+
+	<script type="application/json" id="images-json">
+	[
+		"../images/cats/woody/001.jpg",
+		"../images/cats/woody/002.jpg",
+		"../images/cats/woody/003.jpg",
+		"../images/cats/woody/004.jpg",
+		"../images/cats/woody/005.jpg"
+	]
+	</script>
 </body>
 </html>
