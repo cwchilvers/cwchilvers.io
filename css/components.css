@@ -8,6 +8,16 @@
 	width: 20px;
 }
 
+/* chanchan.world */
+.chan-chan-world img {
+	width: 15px
+}
+
+.chan-chan-world {
+	color: white;
+	text-decoration: underline;
+	font-size: 12px
+}
 
 /* Toast */
 .toast {
