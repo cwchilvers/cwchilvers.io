@@ -115,3 +115,9 @@
 	padding: 10px 0;
 	text-decoration: underline
 }
+
+.detail {
+		padding: 10px 0;
+		font-size: 10px;
+		text-align: left;
+}
